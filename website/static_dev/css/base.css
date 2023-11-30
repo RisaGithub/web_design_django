@@ -1,3 +1,7 @@
+:root {
+    --font: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
 * {
     min-width: fit-content;
     width: 100%;
@@ -7,6 +11,8 @@
 
     text-decoration: none;
     border: none;
+
+    font-family: var(--font);
 }
 
 a {
@@ -27,10 +33,12 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 16%;
+    width: 18%;
     position: relative;
     overflow-y: auto;
     overflow-x: hidden;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 
 .-main-div {

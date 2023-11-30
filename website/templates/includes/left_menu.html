@@ -1,28 +1,37 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/includes/left_menu.css' %}" />
 
-<ul class="flex-column mb-sm-auto">
+{% with request.resolver_match.view_name as view_name %}
+<div class="flex-column mb-sm-auto">
+  <!-- 
+  <img src="{% static 'img/logo/white.png' %}" class="-logo" />
+  -->
+  <div class="-logo-title">RISA</div>
+
+  <div class="-label-group">App</div>
   <a href="">
-    <div class="title">RISA</div>
-  </a>
-  <div class="spacer-h-"></div>
-  <a href="">
-    <div class="-btn-menu">Home</div>
-  </a>
-  <a href="">
-    <div class="-btn-menu">Home</div>
+    <div
+      class="-btn-menu{% if view_name == 'homepage:main' %}-active{% endif %}"
+    >
+      Home
+    </div>
   </a>
   <a href="">
-    <div class="-btn-menu">Home</div>
+    <div class="-btn-menu">Главная</div>
+  </a>
+  <div class="-label-group">Personal</div>
+  <a href="">
+    <div class="-btn-menu">Button</div>
   </a>
   <a href="">
-    <div class="-btn-menu">Home</div>
+    <div class="-btn-menu">Кнопка</div>
   </a>
-</ul>
+</div>
 
 <div class="dropdown">
   <a href="">
-    <div class="-btn-menu">About</div>
+    <div class="-btn-menu -align-text-center">About</div>
   </a>
 </div>
 <div class="spacer-h-40"></div>
+{% endwith %}
