@@ -7,7 +7,7 @@ python -m venv venv
 ```
 ### activate venv
 ```
-venv/Scripts/activate
+venv\Scripts\activate
 ```
 ### upgrade pip
 ```

@@ -1,6 +1,11 @@
-:root {
-    --font: Verdana, Geneva, Tahoma, sans-serif;
-  }
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('../fonts/Montserrat-Regular.ttf') format('ttf');
+    src: url('../fonts/Montserrat-Thin.ttf') format('ttf');
+    src: url('../fonts/Montserrat-ExtraLight.ttf') format('ttf');
+    src: url('../fonts/Montserrat-Light.ttf') format('ttf');
+    src: url('../fonts/Montserrat-Medium.ttf') format('ttf');
+}
 
 * {
     min-width: fit-content;
@@ -12,14 +17,15 @@
     text-decoration: none;
     border: none;
 
-    font-family: var(--font);
+    font-family: 'Montserrat', sans-serif;
 }
 
 a {
     text-decoration: none;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     background-color: rgb(25, 25, 30);
