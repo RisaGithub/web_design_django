@@ -172,11 +172,26 @@ body {
   background-color: rgb(25, 30, 40);
 }
 
+*::-webkit-scrollbar {
+  width: 10px; /* ширина scrollbar */
+}
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1); /* цвет дорожки */
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.15); /* цвет плашки */
+  border-radius: 8px; /* закругления плашки */
+  border: 0px solid; /* padding вокруг плашки */
+}
+
 body {
   display: flex;
 }
 
-.-main-div {
+.-content-div {
   font-size: medium;
   height: 100%;
+  overflow-y: auto;
+
+  overflow-x: hidden;
 }
