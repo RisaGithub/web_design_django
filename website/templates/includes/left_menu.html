@@ -6,34 +6,76 @@
   <!-- 
   <img src="{% static 'img/logo/white.png' %}" class="-logo" />
   -->
-  <div class="-logo-title">RISA</div>
+  <div class="-logo-title">RoamWay​</div>
 
-  <div class="-group-separator"></div>
   <a href="">
     <div
       class="-btn-menu{% if view_name == 'homepage:main' %}-active{% endif %}"
     >
+      <img
+        class="-menu-img"
+        src="{% static 'img/includes/left_menu/home.png' %}"
+        alt=""
+      />
       Home
     </div>
   </a>
   <a href="">
-    <div class="-btn-menu">Главная</div>
+    <div class="-btn-menu">
+      <img
+        class="-menu-img"
+        src="{% static 'img/includes/left_menu/home.png' %}"
+        alt=""
+      />
+      Главная
+    </div>
   </a>
 
   <div class="-group-separator"></div>
 
   <a href="">
-    <div class="-btn-menu">Button</div>
+    <div class="-btn-menu">
+      <img
+        class="-menu-img"
+        src="{% static 'img/includes/left_menu/categories.png' %}"
+        alt=""
+      />
+      Photos
+    </div>
   </a>
   <a href="">
-    <div class="-btn-menu">Кнопка</div>
+    <div class="-btn-menu">
+      <img
+        class="-menu-img"
+        src="{% static 'img/includes/left_menu/categories.png' %}"
+        alt=""
+      />
+      Фотографии
+    </div>
   </a>
 </div>
 
 <div class="spacer-h-30"></div>
 <div class="dropdown">
   <a href="">
-    <div class="-btn-menu -align-text-center">About</div>
+    <div class="-btn-menu">
+      <img
+        class="-menu-img"
+        src="{% static 'img/includes/left_menu/settings.png' %}"
+        alt=""
+      />
+      Settings
+    </div>
+  </a>
+  <a href="">
+    <div class="-btn-menu">
+      <img
+        class="-menu-img"
+        src="{% static 'img/includes/left_menu/about.png' %}"
+        alt=""
+      />
+      About
+    </div>
   </a>
 </div>
 <div class="spacer-h-30"></div>
