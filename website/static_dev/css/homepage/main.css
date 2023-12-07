@@ -1,21 +1,38 @@
 :root {
-  --top-div-height: 300px;
-  --bottom-div-height: 400px;
+  --title-height: 50px;
+  --top-div-height: 250px;
+  --bottom-div-height: 450px;
+  --bottom-divs-width: 450px;
   --main-padding: 80px;
+  --padding-right: 8%;
   --secondary-padding: 50px;
+}
+
+.-div-title {
+  height: var(--title-height);
+  font-size: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0px 0 0px;
 }
 
 .-main-div {
   width: 100%;
   height: 100%;
   padding: var(--main-padding);
-  padding-right: 8%;
+  padding-right: var(--padding-right);
 }
 
 .-top-div {
   width: 100%;
   height: var(--top-div-height);
+  max-height: var(--top-div-height);
   background-color: aqua;
+}
+
+.-cards-container {
+  width: 100%;
+  height: calc(var(--top-div-height) - var(--title-height));
+  max-height: calc(var(--top-div-height) - var(--title-height));
 }
 
 .-bottom-div {
@@ -30,15 +47,19 @@
   position: relative;
   margin-top: var(--secondary-padding);
   margin-right: var(--secondary-padding);
-  height: 300px;
-  background-color: blue;
+  height: var(--bottom-div-height);
+
+  opacity: 0.3;
 }
 
 .-bottom-div1 {
-  width: 400px;
+  background-color: blue;
+  width: 56vw;
+  max-width: 755px;
 }
 
 .-bottom-div2 {
   width: auto;
-  min-width: 100px;
+  min-width: 538px;
+  background-color:blueviolet;
 }
