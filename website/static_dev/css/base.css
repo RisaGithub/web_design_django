@@ -143,7 +143,6 @@
 
 * {
   min-width: fit-content;
-  width: 100%;
 
   margin: 0px;
   padding: 0px;
@@ -191,6 +190,7 @@ body {
 .-content-div {
   font-size: medium;
   height: 100%;
+  width: 100%;
   overflow-y: auto;
 
   overflow-x: hidden;
